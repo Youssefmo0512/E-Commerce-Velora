@@ -1,0 +1,452 @@
+[
+    {
+        "id": 1,
+        "name": "Smartphone",
+        "price": {
+            "oldPrice": 80.00,
+            "newPrice": 100.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/smart1.jpeg",
+            "thumbs": [
+                "img/all_models/smart1.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Smartphone",
+        "price": {
+            "oldPrice": 90.00,
+            "newPrice": 100.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/smart2.jpeg",
+            "thumbs": [
+                "img/all_models/smart2.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Smartphone",
+        "price": {
+            "oldPrice": 70.00,
+            "newPrice": 100.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/smart3.jpeg",
+            "thumbs": [
+                "img/all_models/smart3.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Smartphone",
+        "price": {
+            "oldPrice": 90.00,
+            "newPrice": 100.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/smart4.jpeg",
+            "thumbs": [
+                "img/all_models/smart4.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "Smartphone",
+        "price": {
+            "oldPrice": 60.00,
+            "newPrice": 100.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/smart5.jpeg",
+            "thumbs": [
+                "img/all_models/smart5.jpeg"
+            ]
+        }
+    }, 
+    {
+        "id": 6,
+        "name": "Watches",
+        "price": {
+            "oldPrice": 30.00,
+            "newPrice": 50.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/watch1.webp",
+            "thumbs": [
+                "img/all_models/watch1.webp"
+            ]
+        }
+    }, 
+    {
+        "id": 7,
+        "name": "Watches",
+        "price": {
+            "oldPrice": 40.00,
+            "newPrice": 60.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/watch2.jpg",
+            "thumbs": [
+                "img/all_models/watch2.jpg"
+            ]
+        }
+    }, 
+    {
+        "id": 8,
+        "name": "Watches ",
+        "price": {
+            "oldPrice": 20.00,
+            "newPrice": 35.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/watch3.jpg",
+            "thumbs": [
+                "img/all_models/watch3.jpg"
+            ]
+        }
+    }, 
+    {
+        "id": 9,
+        "name": "Watches",
+        "price": {
+            "oldPrice": 35.00,
+            "newPrice": 55.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/watch4.jpeg",
+            "thumbs": [
+                "img/all_models/watch4.jpeg"
+            ]
+        }
+    }, 
+    {
+        "id": 10,
+        "name": "Watches",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/watch5.jpg",
+            "thumbs": [
+                "img/all_models/watch5.jpg"
+            ]
+        }
+    },
+    {
+        "id": 11,
+        "name": "Electronics",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/elctran1.jpeg",
+            "thumbs": [
+                "img/all_models/elctran1.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 12,
+        "name": "Electronics",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/elctran2.jpeg",
+            "thumbs": [
+                "img/all_models/elctran2.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 13,
+        "name": "Electronics",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/elctran3.jpeg",
+            "thumbs": [
+                "img/all_models/elctran3.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 14,
+        "name": "Electronics",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/elctran4.jpeg",
+            "thumbs": [
+                "img/all_models/elctran4.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 15,
+        "name": "Electronics",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/elctran5.jpeg",
+            "thumbs": [
+                "img/all_models/elctran5.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 16,
+        "name": "Furnitures",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/Furnitures1.jpeg",
+            "thumbs": [
+                "img/all_models/Furnitures1.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 17,
+        "name": "Furnitures",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/Furnitures2.jpeg",
+            "thumbs": [
+                "img/all_models/Furnitures2.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 18,
+        "name": "Furnitures",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/Furnitures3.jpeg",
+            "thumbs": [
+                "img/all_models/Furnitures3.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 19,
+        "name": "Furnitures",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/Furnitures4.jpg",
+            "thumbs": [
+                "img/all_models/Furnitures4.jpg"
+            ]
+        }
+    },
+    {
+        "id": 20,
+        "name": "Furnitures",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/Furnitures5.jpeg",
+            "thumbs": [
+                "img/all_models/Furnitures5.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 21,
+        "name": "Collections",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/collction1.jpeg",
+            "thumbs": [
+                "img/all_models/collction1.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 22,
+        "name": "Collections",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/collction2.jpeg",
+            "thumbs": [
+                "img/all_models/collction2.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 23,
+        "name": "Collections",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/collction3.jpg",
+            "thumbs": [
+                "img/all_models/collction3.jpg"
+            ]
+        }
+    },
+    {
+        "id": 24,
+        "name": "Collections",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/collction4.jpg",
+            "thumbs": [
+                "img/all_models/collction4.jpg"
+            ]
+        }
+    },
+    {
+        "id": 25,
+        "name": "Collections",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/collction5.jpeg",
+            "thumbs": [
+                "img/all_models/Furnitures5.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 26,
+        "name": "Fashion",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/fashion1.jpeg",
+            "thumbs": [
+                "img/all_models/fashion1.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 27,
+        "name": "Fashion",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/fashion2.jpeg",
+            "thumbs": [
+                "img/all_models/fashion2.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 28,
+        "name": "Fashion",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/fashion3.jpeg",
+            "thumbs": [
+                "img/all_models/fashion3.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 29,
+        "name": "Fashion",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/fashion4.jpeg",
+            "thumbs": [
+                "img/all_models/fashion4.jpeg"
+            ]
+        }
+    },
+    {
+        "id": 30,
+        "name": "Fashion",
+        "price": {
+            "oldPrice": 44.00,
+            "newPrice": 65.00
+        },
+        "discount":20,
+        "img": {
+            "singleImage": "img/all_models/fashion5.jpeg",
+            "thumbs": [
+                "img/all_models/fashion5.jpeg"
+            ]
+        }
+    }
+]

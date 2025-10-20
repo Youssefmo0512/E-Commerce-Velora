@@ -1,0 +1,141 @@
+/* ! Modal Search */
+.modal-search {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  overflow-y: auto;
+}
+
+.modal-search.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-wrapper {
+  max-width: 800px;
+  width: 95%;
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 10vh;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.modal-text {
+  font-size: 14px;
+  color: #7a7a7a;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dee0ea;
+}
+
+.search {
+  display: flex;
+  margin-top: 15px;
+}
+
+.search input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #dee0ea;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+.search button {
+  width: 10%;
+  background: #fff;
+  border: 1px solid #dee0ea;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.search button i {
+  font-size: 18px;
+  color: #7a7a7a;
+}
+
+.search-result {
+  margin-top: 25px;
+}
+
+.search-heading {
+  background-color: #f9f9f9;
+  padding: 12px;
+  border: 1px solid #dee0ea;
+}
+
+.search-heading h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  border-left: 1px solid #dee0ea;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-right: 1px solid #dee0ea;
+  border-bottom: 1px solid #dee0ea;
+  column-gap: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.result-item:hover {
+  background-color: #f9f9f9;
+}
+
+.search-thumb {
+  max-width: 65px;
+  border-radius: 6px;
+}
+
+.search-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.search-sku {
+  color: #7a7a7a;
+  margin: 2px 0;
+}
+
+.search-price {
+  font-weight: 600;
+  color: #dc3545;
+}
+
+#close-modal-search {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 22px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#close-modal-search:hover {
+  color: #dc3545;
+}

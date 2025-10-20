@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velora | payment</title>  
+  <link rel="stylesheet" href="color.css">  
+  <link rel="icon" type="image/png" href="img/Velora-logo-transparent.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #edf2ff, #f8f9ff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .checkout-container {
+      background: #fff;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 35px 25px 40px;
+      animation: fadeIn 0.9s ease-in-out;
+      transition: all 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #2c2c54;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .payment-logos {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+
+    .payment-logos img {
+      width: 70px;
+      height: auto;
+      margin: 5px;
+      background: #f7f8ff;
+      border-radius: 10px;
+      padding: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .payment-logos img:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #6a5af9;
+      box-shadow: 0 0 8px rgba(106, 90, 249, 0.3);
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .pay-btn {
+      background: linear-gradient(90deg, #6a5af9, #7f6bff);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+      box-shadow: 0 4px 15px rgba(106, 90, 249, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pay-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(106, 90, 249, 0.4);
+    }
+
+    .pay-btn:active {
+      transform: scale(0.98);
+    }
+
+    .success {
+      text-align: center;
+      color: #28a745;
+      font-weight: 600;
+      margin-top: 15px;
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    @media (max-width: 500px) {
+      .checkout-container {
+        padding: 25px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      .payment-logos img {
+        width: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="checkout-container">
+    <h2>Secure Checkout</h2>
+
+    <div class="payment-logos">
+      <img src="img/payment/MasterCard_Logo.svg.png" alt="Mastercard">
+      <img src="img/payment/images.png" alt="Visa">
+      <img src="img/payment/meeza.png" alt="Mezaa">
+    </div>
+
+    <form id="paymentForm">
+      <label>Cardholder name</label>
+      <input type="text" id="name" placeholder="Enter cardholder name" required>
+
+      <label>Card number</label>
+      <input type="text" id="card" placeholder="1234 5678 9012 3456" maxlength="19" required>
+
+      <div class="row">
+        <div>
+          <label>Expiration date</label>
+          <input type="text" id="exp" placeholder="MM/YY" maxlength="5" required>
+        </div>
+        <div>
+          <label>CVC</label>
+          <input type="text" id="cvc" placeholder="123" maxlength="3" required>
+        </div>
+      </div>
+
+      <button type="submit" class="pay-btn">Pay Now</button>
+      <div class="success" id="successMsg">✅ Payment Successful!</div>
+    </form>
+  </div>
+  <script src="color.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Velora | Login / Signup </title>
+    <link rel="icon" type="image/png" href="img/Velora-logo-transparent.png">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 70%;
+      height: 80vh;
+      perspective: 1000px;
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s ease;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .panel {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .left-panel {
+      flex: 1;
+      background: linear-gradient(180deg, #2196f3, #1976d2);
+      color: #fff;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .left-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('https://www.transparenttextures.com/patterns/cubes.png');
+      opacity: 0.1;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .left-panel h3 {
+      font-weight: 400;
+      margin-bottom: 10px;
+      opacity: 0.9;
+    }
+
+    .left-panel h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .left-panel p {
+      font-size: 14px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .right-panel {
+      flex: 1;
+      padding: 60px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right-panel h2 {
+      color: #1976d2;
+      margin-bottom: 10px;
+    }
+
+    .right-panel p {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    form input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-bottom: 2px solid #e0e0e0;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    form input:focus {
+      outline: none;
+      border-bottom-color: #2196f3;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 30px;
+    }
+
+    .options a {
+      text-decoration: none;
+      color: #2196f3;
+      cursor: pointer;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      background: #2196f3;
+      color: #fff;
+      font-size: 15px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #1976d2;
+    }
+
+    /* الوجه الخلفي */
+    .back {
+      transform: rotateY(180deg);
+    }
+
+    /* تأثير الخروج بعد تسجيل الدخول */
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.7s ease;
+    }
+
+    /* النجوم */
+    .star {
+      position: absolute;
+      background: #2196f3;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: twinkle 2s infinite ease-in-out alternate;
+    }
+
+    @keyframes twinkle {
+      from { opacity: 0.2; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1.2); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card" id="card">
+      
+      <!-- واجهة تسجيل الدخول -->
+      <div class="panel front">
+        <div class="left-panel">
+          <div class="logo">⚙ Velora Commerce</div>
+          <h3>Nice to see you again</h3>
+          <h1>WELCOME BACK</h1>
+          <p>We’re glad to see you again! Log in to continue your journey, stay connected, and discover what’s new in Velora Store</p>
+        </div>
+
+        <div class="right-panel">
+          <h2>Login Account</h2>
+          <p>Welcome back! We're excited to have you again — log in to continue exploring and shopping.</p>
+          <form id="loginForm">
+            <input type="text" id="loginUser" placeholder="Username or Email" required />
+            <input type="password" id="loginPass" placeholder="Password" required />
+            <div class="options">
+              <a id="toSignup">Create new account</a>
+            </div>
+            <button type="submit">Log In</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- واجهة إنشاء الحساب -->
+      <div class="panel back">
+        <div class="left-panel">
+          <div class="logo">⚙ Velora Commerce</div>
+          <h3>Join Our Store</h3>
+          <h1>CREATE ACCOUNT</h1>
+          <p>Sign up to access your personalized shopping experience, exclusive offers, and more!</p>
+        </div>
+
+        <div class="right-panel">
+          <h2>Create Account</h2>
+          <p>Join Velora today and start exploring amazing deals and products made just for you.</p>
+          <form id="signupForm">
+            <input type="text" id="signupUser" placeholder="Username" required />
+            <input type="email" id="signupEmail" placeholder="Email" required />
+            <input type="password" id="signupPass" placeholder="Password (8-15 word)" required />
+            <div class="options">
+              <a id="toLogin">Already a member? Log in</a>
+            </div>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const card = document.getElementById('card');
+    const toSignup = document.getElementById('toSignup');
+    const toLogin = document.getElementById('toLogin');
+    const signupForm = document.getElementById('signupForm');
+    const loginForm = document.getElementById('loginForm');
+
+    toSignup.addEventListener('click', () => card.classList.add('flipped'));
+    toLogin.addEventListener('click', () => card.classList.remove('flipped'));
+
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const username = document.getElementById('signupUser').value.trim();
+      const email = document.getElementById('signupEmail').value.trim().toLowerCase();
+      const password = document.getElementById('signupPass').value.trim();
+
+      const passRegex = /^[A-Za-z0-9]{8,15}$/;
+
+      const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+      if (!username || !email || !password) {
+        alert("Please fill in all fields!");
+        return;
+      }
+
+      if (!emailRegex.test(email)) {
+        alert("الرجاء إدخال إيميل صحيح مثل: name@gmail.com");
+        return;
+      }
+
+      if (!passRegex.test(password)) {
+        alert("كلمة المرور يجب أن تكون أرقام فقط وطولها بين 8 و15 رقمًا.");
+        return;
+      }
+
+      const users = JSON.parse(localStorage.getItem('users')) || [];
+      const exists = users.find(u => u.username === username || u.email === email);
+
+      if (exists) {
+        alert("User already exists!");
+        return;
+      }
+
+      users.push({ username, email, password });
+      localStorage.setItem('users', JSON.stringify(users));
+
+      alert("Account created successfully! Please login.");
+      signupForm.reset();
+      card.classList.remove('flipped');
+    });
+
+    // تسجيل الدخول
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const username = document.getElementById('loginUser').value.trim().toLowerCase();
+      const password = document.getElementById('loginPass').value.trim();
+
+      const users = JSON.parse(localStorage.getItem('users')) || [];
+
+      const validUser = users.find(u =>
+        (u.username.toLowerCase() === username || u.email === username) && u.password === password
+      );
+
+      if (validUser) {
+        card.classList.add('fade-out');
+        setTimeout(() => {
+          window.location.href = "home.html";
+        }, 700);
+      } else {
+        alert("Invalid username or password!");
+      }
+    });
+
+    const starCount = 100;
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      const size = Math.random() * 3 + 2 + 'px';
+      star.style.width = size;
+      star.style.height = size;
+      star.style.top = Math.random() * 100 + '%';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.animationDelay = Math.random() * 5 + 's';
+      document.body.appendChild(star);
+    }
+  </script>
+</body>
+</html>
